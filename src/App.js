@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import NavBar from "./components/navbar";
+import logo from './static/images/white high res version.png'
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="h-screen w-full bg-[url('./static/images/portfolio-BG1.png')]">
+      <NavBar logo={logo} />
+      <h1 className="text-white prompt text-6xl uppercase font-bold">Hello, I'm Patrick</h1>
+      <h2 className="text-white prompt text-3xl uppercase font-light">I build exceptional digital <br />experiences for ethical brands</h2>
+
     </div>
   );
 }

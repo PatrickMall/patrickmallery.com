@@ -1,8 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@100;300;500;600;800&display=swap');
+
+:root{
+  --white: #edf2f4;
+  --grey: #91a1a4;
+  --blue: #22afdb;
+  --green: #00cc99;
+  --black: #041316;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +20,149 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.prompt {
+  font-family: Prompt, Consolas, Monaco;
+}
+.lato {
+  font-family: Lato, Consolas, monospace;
+}
+
+.underline_animation1 {
+  display: inline-block;
+  position: relative;
+}
+.underline_animation1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scale(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--green) ;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+  border-radius: 2000px;
+  
+}
+
+.underline_animation1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline_animation2 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+.underline_animation2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue) ;
+  transform-origin: bottom right;
+  transition: transform 0.45s ease-in-out;
+  transition-delay: 250ms;
+  border-radius: 2000px;
+}
+
+.underline_animation2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline_animation3 {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+.underline_animation3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--green) ;
+  transform-origin: bottom right;
+  border-radius: 2000px;
+  transition: transform 0.65s ease-in-out;
+  transition-delay: 400ms;
+}
+
+.underline_animation3:hover::after {
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline_animation4 {
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+}
+.underline_animation4::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue) ;
+  transform-origin: bottom right;
+  border-radius: 2000px;
+  transition: transform 0.75s ease-in;
+  transition-delay: 600ms;
+}
+
+.underline_animation4:hover::after {
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.text-gradient-animation1 {
+  background-size: 0%;
+  background-position-x: 0%;
+  background-image: linear-gradient(10deg, var(--white),var(--white));
+  transition: background-position 0.5s ease-in-out;
+  transition-delay: 1s;
+}
+.text-gradient-animation1:hover {
+  background-color:  --blue;
+  background-image: linear-gradient(10deg, var(--green), var(--blue), var(--green));
+  background-size: 400%, 400%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: 5s ease-in-out infinite gradient;
+  animation-delay: 500ms;
+  transition: background-image 2s ease-in-out;
+  transition-delay: 1s;
+  transform: scaleX(1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }  
+}
+
+
+
+
