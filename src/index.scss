@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@100;300;500;600;800&display=swap');
+@use 'text-gradient';
 
 :root{
   --white: #edf2f4;
@@ -119,51 +120,6 @@ code {
 
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-
-.text-gradient-animation1 {
-  background-size: 0%;
-  background-position-x: 0%;
-  background-image: linear-gradient(10deg, var(--white),var(--white));
-  transition: background-position 0.5s ease-in-out;
-  transition-delay: 1s;
-}
-.text-gradient-animation1:hover {
-  
-  background-image:linear-gradient(10deg, var(--green), var(--blue), var(--green));
-  background-color:  --blue;
-  background-size: 400%, 400%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  animation: 3s ease-in-out infinite gradient;
-  animation-delay: 500ms;
-  transition: background-color 2s ease-in-out;
-  transition-delay: 1s;
-  transform: scaleX(1);
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }  
-}
-
-.icon {
-  color: var(--white);
-}
-
-.icon:hover {
-  color: var(--blue);
 }
 
 
