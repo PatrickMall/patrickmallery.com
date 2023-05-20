@@ -44,14 +44,11 @@ code {
   transform-origin: bottom right;
   transition: transform 0.25s ease-in-out;
   border-radius: 2000px;
-  
 }
-
 .underline_animation1:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 .underline_animation2 {
   display: inline-block;
   position: relative;
@@ -62,7 +59,7 @@ code {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 4px;
   bottom: 0;
   left: 0;
   background-color: var(--blue) ;
@@ -71,12 +68,10 @@ code {
   transition-delay: 250ms;
   border-radius: 2000px;
 }
-
 .underline_animation2:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 .underline_animation3 {
   display: inline-block;
   position: relative;
@@ -87,7 +82,7 @@ code {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 4px;
   bottom: 0;
   left: 0;
   background-color: var(--green) ;
@@ -96,13 +91,10 @@ code {
   transition: transform 0.65s ease-in-out;
   transition-delay: 400ms;
 }
-
 .underline_animation3:hover::after {
-
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 .underline_animation4 {
   display: inline-block;
   position: relative;
@@ -113,7 +105,7 @@ code {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 4px;
   bottom: 0;
   left: 0;
   background-color: var(--blue) ;
@@ -128,6 +120,8 @@ code {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+
 .text-gradient-animation1 {
   background-size: 0%;
   background-position-x: 0%;
@@ -136,17 +130,18 @@ code {
   transition-delay: 1s;
 }
 .text-gradient-animation1:hover {
+  
+  background-image:linear-gradient(10deg, var(--green), var(--blue), var(--green));
   background-color:  --blue;
-  background-image: linear-gradient(10deg, var(--green), var(--blue), var(--green));
   background-size: 400%, 400%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: 5s ease-in-out infinite gradient;
+  animation: 3s ease-in-out infinite gradient;
   animation-delay: 500ms;
-  transition: background-image 2s ease-in-out;
+  transition: background-color 2s ease-in-out;
   transition-delay: 1s;
   transform: scaleX(1);
 }
@@ -163,6 +158,12 @@ code {
   }  
 }
 
+.icon {
+  color: var(--white);
+}
 
+.icon:hover {
+  color: var(--blue);
+}
 
 
