@@ -1,33 +1,54 @@
-.icon1 {
+.icon {
     color: var(--white);
-    border-radius: 50%;
     box-shadow: 25px -25px 0 2px var(--black), -30px -25px 0 2px var(--black), -30px 20px 0 2px var(--black), 25px 20px 0 2px var(--black), 0px 0px 0 0 var(--white);
     padding: 20px 14px;
+    animation: circle-out 0.2s ease-in-out forwards;
+}
+
+.icon1 {
+    color: var(--white);
+    box-shadow: 25px -25px 0 2px var(--black), -30px -25px 0 2px var(--black), -30px 20px 0 2px var(--black), 25px 20px 0 2px var(--black), 0px 0px 0 0 var(--white);
+    padding: 20px 14px;
+    animation: square-in 0.2s linear forwards;
   }
 
-  .icon1:hover{
-    animation: circle 0.2s ease-in-out forwards;
-    transition: animation 2s forwards;
-    z-index: 1;
-  }
-
-  @keyframes circle {
+  @keyframes square-in {
     0% {
-        box-shadow: 25px -25px 0 2px var(--black), -30px -25px 0 2px var(--black), -30px 20px 0 2px var(--black), 25px 20px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px 0px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        transform: scale(1.0);
     }
     25% {
-        box-shadow: 0 -62px 0 2px var(--black), -30px -25px 0 2px var(--black), -30px 20px 0 2px var(--black), 25px 20px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     50% {
-        box-shadow: 0 -62px 0 2px var(--black), -64px 0 0 2px var(--black), -30px 30px 0 2px var(--black), 25px 20px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     75% {
-        box-shadow: 0 -62px 0 2px var(--black), -64px 0 0 2px var(--black), 0px 62px 0 2px var(--black), 25px 20px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     100% {
-        box-shadow: 0 -62px 0 2px var(--black), -64px 0 0 2px var(--black), 0px 62px 0 2px var(--black), 64px 0px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 3px 2px var(--blue);
+    }   
+  }
+
+  @keyframes circle-out {
+    0% {
+        box-shadow: 55px -62px 0 2px var(--black), -65px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        
     }
-    
+    25% {
+        box-shadow: 55px -62px 0 2px var(--black), -65px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        
+    }
+    50% {
+        box-shadow: 55px -62px 0 2px var(--black), -65px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+    }
+    75% {
+        box-shadow: 55px -62px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+    }
+    100% {
+        box-shadow: 55px 0px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+    }   
   }
 
 

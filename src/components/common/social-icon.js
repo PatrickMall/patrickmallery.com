@@ -1,12 +1,26 @@
-const SocialIcon = ({brand}) => {
+import { useState } from "react"
+const SocialIcon = ({ brand }) => {
+
+    const [isHover, setIsHover] = useState(false);
+
+    const handleMouseEnter = (e) => {
+        e.stopPropagation()
+        setIsHover(true)
+    }
+    const handleMouseLeave = (e) => {
+        e.stopPropagation()
+        setTimeout(setIsHover(false), 5000)
+        
+    }
     return (
-        <div className="icon1 inline mr-20">
-            <div className="inline bg-black">
-                <a>
-                    <i class={brand === 'fa-facebook-f' ? `fa-brands fa-2xl px-1 media-icon ${brand}` : `fa-brands py-2 fa-2xl media-icon ${brand}`}></i>
-                </a>
-            </div>
-        </div>
+        <>
+        {!isHover && (<div className="icon inline mr-20" onMouseLeave={(e) => { handleMouseLeave(e) }}>
+                    <i className={brand === 'fa-facebook-f' ? `fa-brands fa-2xl px-1 media-icon ${brand}` : `fa-brands py-2 fa-2xl media-icon ${brand}`} onMouseEnter={(e) => { handleMouseEnter(e) }} ></i>  
+            </div >)}
+        {isHover && (<div className="icon1 inline mr-20" onMouseLeave={(e) => { handleMouseLeave(e) }}>
+                    <i className={brand === 'fa-facebook-f' ? `fa-brands fa-2xl px-1 media-icon1 ${brand}` : `fa-brands py-2 fa-2xl media-icon1 ${brand}`} onMouseEnter={(e) => { handleMouseEnter(e) }} ></i>  
+            </div >)}
+        </>
     )
 }
 export default SocialIcon
