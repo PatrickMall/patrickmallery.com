@@ -9,7 +9,7 @@ const SocialIcon = ({ brand }) => {
     }
     const handleMouseLeave = (e) => {
         e.stopPropagation()
-        setTimeout(setIsHover(false), 5000)
+       setIsHover(false)
         
     }
     return (

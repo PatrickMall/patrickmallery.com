@@ -1,5 +1,5 @@
 import NavItem from "./common/navitem";
-const NavBar = ({ logo }) => {
+const NavBar = ({ logo, contactClick }) => {
     return (
         <div className="navbar">
 
@@ -11,7 +11,7 @@ const NavBar = ({ logo }) => {
                 <div className="flex mt-12">
                     <NavItem url={'/about'} label={'about'} />
                     <NavItem url={'/portfolio'} label={'portfolio'} />
-                    <NavItem url={'/contact'} label={'contact'} />
+                    <NavItem label={'contact'} contactClick={contactClick} />
                 </div>
             </div>
             </div>
