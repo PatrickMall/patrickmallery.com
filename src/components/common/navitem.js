@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 const NavItem = ({ url, label, contactClick }) => {
     return (
         <>
-                <div className="mx-16 z-10">
+                <div className="mx-16 mt-8 z-10">
                     <Link to={url}>
                         <span className="underline_animation1 z-10">
                             <span className="underline_animation2 z-10">
