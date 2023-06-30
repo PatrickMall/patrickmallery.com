@@ -1,0 +1,33 @@
+.hamburger {
+    stroke-width: 10px;
+   stroke-linecap: round
+}
+.line-top {
+ stroke-dasharray: 70 1000;
+ transition: 1s;
+}
+.line-middle-left, .line-middle-right {
+    stroke-dasharray: 100 1000;
+    transition: 1s;
+   }
+.line-bottom {
+    stroke-dasharray: 70 1000;
+    transition: 1s;
+}
+
+.burger-menu[aria-expanded="true"] .line-middle-left {
+    stroke-dasharray: 0 100;
+    transition: 1s;
+   }
+   .burger-menu[aria-expanded="true"] .line-middle-right  {
+    stroke-dasharray: 0 100;
+   }
+
+   .burger-menu[aria-expanded="true"] .line-top{
+    stroke-dasharray: 182 150;
+    stroke-dashoffset: 200;
+   }
+   .burger-menu[aria-expanded="true"] .line-bottom{
+    stroke-dasharray: 200 130;
+    stroke-dashoffset: 200;
+   }

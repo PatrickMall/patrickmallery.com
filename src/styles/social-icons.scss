@@ -2,7 +2,7 @@
     color: var(--white);
     box-shadow: 25px -25px 0 2px var(--black), -30px -25px 0 2px var(--black), -30px 20px 0 2px var(--black), 25px 20px 0 2px var(--black), 0px 0px 0 0 var(--white);
     padding: 20px 14px;
-    animation: circle-out 0.2s ease-in-out forwards;
+    animation: square-out 0.2s ease-in-out forwards;
 }
 
 .icon1 {
@@ -30,7 +30,7 @@
     }   
   }
 
-  @keyframes circle-out {
+  @keyframes square-out {
     0% {
         box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
         

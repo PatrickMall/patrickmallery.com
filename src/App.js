@@ -1,23 +1,33 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import NavBar from "./components/navbar";
-import logo from './static/images/white high res version.png'
+import logo from './static/images/logo v1.png'
 import Footer from "./components/footer";
 import ContactModal from "./components/contact-modal";
+import HomeText from "./components/home-text";
+import About from "./components/about";
 const App = () => {
-  const [contactToggle, setContactToggle] = useState(false)
 
-  const handleContactClick = () => {
-    console.log('clicked')
-  }
+  console.log(`
+  ╔═╦╗────╔╗╔╗─────────╔╗────────────╔╗───╔╗───╔══╗
+  ║╔╣╚╦═╦═╣╠╬╬═╦╦═╗╔═╦╦╣╚╗╔══╦╦╗╔═╦═╦╝╠═╗─║╚╦═╦╬╦╗║
+  ║╚╣║║╩╣═╣═╣║║║║╬║║╬║║║╔╣║║║║║║║═╣╬║╬║╩╬╗║║║╩╣║╠╔╝
+  ╚═╩╩╩═╩═╩╩╩╩╩═╬╗║╚═╩═╩═╝╚╩╩╬╗║╚═╩═╩═╩═╩╣╚╩╩═╬╗╠╣
+  ──────────────╚═╝──────────╚═╝─────────╝────╚═╩╝`)
   return (
-    <div className="h-screen w-full bg-[url('./static/images/Portfolio_3.png')]">
-      <NavBar logo={logo} contactClick={handleContactClick} />
-      <h1 className="text-white prompt text-6xl uppercase font-bold mt-64 ml-32">Hello, I'm <span className="text-gradient-animation1">Patrick</span></h1>
-      <h2 className="text-white prompt text-3xl uppercase font-light ml-32 mt-8">I build exceptional digital <br />experiences for ethical brands</h2>
-      <ContactModal />
+    <div>
+      <div className="h-screen w-full bg-[url('./static/images/Portfolio_3.png')] overflow-y-auto bg-center ">
+        <div>
+        <NavBar logo={logo} />
+        <Routes>
+          <Route path={"/contact"} element={<ContactModal />} />
+          <Route path={"/"} element={<HomeText />} />
+          <Route path={"/about"} element={<About />} />
+          </Routes>
+          </div>
       <Footer />
-    </div>
+      </div>
+      </div>
   );
 }
 
