@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-const NavItem = ({ url, label, contactClick }) => {
+const NavItem = ({ url, label}) => {
     return (
         <>
                 <div className="mx-16 mt-8 z-10">

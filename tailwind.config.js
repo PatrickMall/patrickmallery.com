@@ -9,7 +9,8 @@ module.exports = {
       'grey': '#91a1a4',
       'blue': '#22afdb',
       'green': '#00cc99',
-      'black': '#041316'
+      'black': '#041316',
+      'black-transparent': '#04131695'
     },
     fontFamily: {
       'header': ['Prompt', 'sans-serif'],
