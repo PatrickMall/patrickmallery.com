@@ -12,24 +12,24 @@ const NavBar = ({ logo }) => {
     return (
         <div className="navbar">   
             <div className="flex justify-between item-center">
-                <Link to="/"><img src={logo} alt="logo" className="w-12 ml-8 mt-8 fixed z-10" /></Link>
+                <Link to="/"><img src={logo} alt="logo" className="w-12 ml-8 mt-8 fixed z-20" /></Link>
                 <div className="lg:flex fixed right-0 z-10 hidden">
                     <NavItem url={'/about'} label={'about'} />
                     <NavItem url={'/portfolio'} label={'portfolio'} />
                     <NavItem url={'/contact'} label={'contact'} />
                 </div>
-                <div className=" lg:hidden fixed right-8 top-8 z-10">
+                <div className=" lg:hidden fixed right-8 top-8 z-20">
                     <Hamburger color="#f4f4f4" size={64} rounded toggled={isOpen} toggle={setOpen}/>
                 </div>
             </div>
-            {isOpen && (<div className="z-10 absolute bg-black w-full pt-32 pb-8 z-0">
-                <div onClick={closeMenu}>
+            {isOpen && (<div className="z-10 absolute bg-black w-full pt-32 pb-8">
+                <div onClick={closeMenu} className="w-1/4">
                     <NavItem url={'/about'} label={'about'} />
                 </div>
-                <div  onClick={closeMenu}>
+                <div  onClick={closeMenu} className="w-1/4">
                     <NavItem url={'/portfolio'} label={'portfolio'} />
                 </div>
-                <div  onClick={closeMenu}>
+                <div  onClick={closeMenu} className="w-1/4">
                     <NavItem url={'/contact'} label={'contact'} />
                 </div>
             </div>)}
