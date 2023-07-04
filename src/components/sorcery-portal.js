@@ -2,7 +2,6 @@ import { useState } from 'react'
 import sorceryHome from '../static/images/sorcery-portal/screencapture-portal-sorcery-design-2023-06-30-19_49_32.png'
 import sorceryDashboard from '../static/images/sorcery-portal/screencapture-portal-sorcery-design-questionnaire-2023-06-30-20_06_52.png'
 import NavItem from "./common/navitem"
-import Lottie from "lottie-react-web"
 import scroll from "../static/lottie/H7nMnAjeEJ.json"
 import { Link } from 'react-router-dom'
 
@@ -54,9 +53,6 @@ const SorceryPortal = () => {
                             <NavItem url={'https://github.com/PatrickMall/sorcery-portal-frontend/blob/main/README.md'} label={'readme'}/>
                         </div>
                 </div>
-                <div className="relative right-96 bottom-24 w-24">
-        <Lottie options={{ animationData: scroll }} />
-        </div>
         </div>
        
         </>

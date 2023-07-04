@@ -1,4 +1,4 @@
-import Lottie from "lottie-react-web"
+
 import scroll from "../static/lottie/H7nMnAjeEJ.json"
 import {motion} from "framer-motion"
 const About = () => {
@@ -16,9 +16,6 @@ const About = () => {
                 As a maker, I thrive on leveraging the power of Arduino and Raspberry Pi to design and build custom controllers and interactive devices. I enjoy pushing the boundaries of hardware integration and creating innovative solutions that bring physical components to life with code.            </p>
             <p className="text-white prompt font-light lg:ml-32 lg:mt-8 lg:w-1/3 mt-4 mx-4 text-shadow">
                 I'm currently seeking opportunities in creative front-end or full-stack roles where I can utilise my diverse skill set to creative applications. My goal is to deliver captivating user experiences by combining my software engineering prowess, design sensibility, and maker mindset.            </p>
-            <div className="relative m-auto  w-24">
-                <Lottie options={{ animationData: scroll }} />
-            </div>
             <div className="">
                 <h2 className="text-white prompt md:text-4xl text-2xl uppercase font-bold lg:mt-16 lg:ml-32 mt-4 text-center lg:text-left text-shadow">Technologies I work with</h2>
                 <div className="grid md:grid-cols-3 lg:w-6/12 grid-cols-1  md:w-100 md:mx-auto lg:mx-0">
