@@ -4,6 +4,7 @@ import SorceryPortal from "./sorcery-portal"
 import { useState } from "react"
 import Daterbase from "./Daterbase"
 import ChuckNorris from "./chuck-norris"
+import TicTacToe from "./tictactoe"
 
 const HorizontalScroller = () => {
     const [emoji, setEmoji] = useState(false)
@@ -20,6 +21,9 @@ const HorizontalScroller = () => {
                 </div>
                 <div className="">
                 <ChuckNorris />         
+                </div>
+                <div className="">
+                <TicTacToe />         
             </div>
             
         </HorizontalScroll>

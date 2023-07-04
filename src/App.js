@@ -14,7 +14,7 @@ const App = () => {
   ──────────────╚═╝──────────╚═╝─────────╝────╚═╩╝`)
   return (
     <div className="">
-      <div className="h-screen w-full bg-[url('./static/images/Portfolio_3.png')] bg-center overflow-y-auto">
+      <div className="h-screen w-full lg:bg-[url('./static/images/Portfolio_3.png')] bg-center overflow-y-auto md:bg-[url('./static/images/bg-md.png')] bg-[url('./static/images/bg-sm.png')]">
         <div>
         <NavBar logo={logo} />
           <AnimatedRoutes />

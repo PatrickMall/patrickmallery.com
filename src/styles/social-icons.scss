@@ -17,33 +17,33 @@
         box-shadow: 55px 0px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     25% {
-        box-shadow: 55px -69px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     50% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     75% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     100% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--trans), -55px 66px 0 2px var(--trans), 70px 60px 0 2px var(--trans), 0 0 0 2px var(--blue);
     }   
   }
 
   @keyframes square-out {
     0% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 70px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
         
     }
     25% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--black), -55px 66px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
         
     }
     50% {
-        box-shadow: 55px -69px 0 2px var(--black), -70px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -70px 0 0 2px var(--black), -55px 0px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     75% {
-        box-shadow: 55px -69px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
+        box-shadow: 55px -69px 0 2px var(--trans), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);
     }
     100% {
         box-shadow: 55px 0px 0 2px var(--black), -2px 0 0 2px var(--black), -55px -2px 0 2px var(--black), 0px 60px 0 2px var(--black), 0 0 0 2px var(--blue);

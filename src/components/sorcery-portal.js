@@ -52,11 +52,12 @@ const SorceryPortal = () => {
                             <NavItem url={'https://portal.sorcery.design'} label={'view'}/>
                             <NavItem url={'https://github.com/PatrickMall/sorcery-portal-frontend/blob/main/README.md'} label={'readme'}/>
                         </div>
-            </div>
-        </div>
-        <div className="absolute bottom-8 left-1/4 w-24">
+                </div>
+                <div className="relative right-96 bottom-24 w-24">
         <Lottie options={{ animationData: scroll }} />
         </div>
+        </div>
+       
         </>
     )
 }

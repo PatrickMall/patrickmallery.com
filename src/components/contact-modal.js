@@ -26,22 +26,23 @@ const ContactModal = () => {
     }
 
     return (
-        <motion.div initial={{ opacity: 0}} animate={{opacity: 1} } exit={{opacity: 0}}>
-            <div className="flex mx-32 my-32">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            
+            <div className="flex lg:mx-32 my-32 lg:bg-transparent bg-black-transparent md:mx-44 md:p-2">
                 <div>
-                <h1 className="prompt text-white uppercase font-bold mr-4 mb-16 text-6xl">Contact me</h1>
+                <h1 className="prompt text-white uppercase font-bold mr-4 lg:mb-16 md:text-6xl text-4xl md:text-left text-center md:mt-0 mt-4">Contact me</h1>
                     <form ref={form} onSubmit={sendEmail}>
                         <FormInput label={'Name'} type={'text'} id={'name'} name={'from_name'} />
                     <FormInput label={'Email'} type={'email'} id={'email'} name={'from_email'}/>
-                    <label className="prompt text-white uppercase font-bold mr-4">Message</label>
+                    <label className="prompt text-white uppercase font-bold lg:mr-4 lg:m-0 m-2">Message</label>
                     <div>
-                        <textarea className="w-96 h-64" name="message"></textarea>
+                        <textarea className="w-96 h-64 lg:m-0 m-2" name="message"></textarea>
                     </div>
-                    <button type="submit" className="button mt-4">
+                    <button type="submit" className="button mt-4 lg:m-0 md:m-2 m-4">
                         <span className="underline_animation1">
                                 <span className="underline_animation2">
                                     <span className="underline_animation3">
-                                        <span className="text-white text-3xl prompt uppercase font-bold underline_animation1 underline_animation4 text-gradient-animation1">
+                                        <span className="text-white text-3xl prompt uppercase font-bold underline_animation1 underline_animation4 text-gradient-animation1 ">
                                             Send
                                         </span>
                                     </span>
