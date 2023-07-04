@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className="">
                 <h2 className="text-white prompt md:text-4xl text-2xl uppercase font-bold lg:mt-16 lg:ml-32 mt-4 text-center lg:text-left text-shadow">Technologies I work with</h2>
-                <div className="grid md:grid-cols-3 lg:w-6/12 grid-cols-1  md:w-100 md:mx-auto">
+                <div className="grid md:grid-cols-3 lg:w-6/12 grid-cols-1  md:w-100 md:mx-auto lg:mx-0">
                 <div  className="lg:ml-32 mx-auto w-48 md:w-58 lg:w-full lg:pr-2">
                 <h3 className="text-white prompt text-2xl uppercase font-bold mt-16">Front-End</h3>
                     <p className="text-white prompt font-light">        
