@@ -44,6 +44,10 @@ code {
     flex-direction: row;
     white-space: nowrap;
   }
+
+  .text-shadow {
+    text-shadow: 0 0 10px var(--black);
+  }
   
 
 

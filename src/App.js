@@ -1,6 +1,6 @@
 
 import NavBar from "./components/navbar";
-import logo from './static/images/logo v1.png'
+import logo from './static/images/Patrick-Mallery-Monogram.png'
 import Footer from "./components/footer";
 
 import AnimatedRoutes from "./components/animated-routes";
