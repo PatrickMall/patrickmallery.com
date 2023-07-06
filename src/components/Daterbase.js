@@ -13,7 +13,7 @@ const Daterbase = () => {
         <>
         <div className="md:grid grid-cols-6 w-screen h-screen">
             <div className="lg:col-span-2 md:col-span-6 row-span-3 mx-4 " >
-                    <div className='lg:w-full md:w-96 mx-auto lg:h-full md:h-36 w-64'>
+                    <div className='lg:w-full md:w-96 mx-auto lg:h-full w-64'>
                     <img className="pointer-events-none" src={daterbaseHome} />
                     </div>   
                     </div>

@@ -10,7 +10,10 @@ const HorizontalScroller = () => {
     const [emoji, setEmoji] = useState(false)
 
 
+
+
     return (
+        
         <>
         <HorizontalScroll reverseScroll = { true } config = {{ stiffness: 1, damping: 2 }}>
             <div className="">
@@ -28,6 +31,7 @@ const HorizontalScroller = () => {
             
         </HorizontalScroll>
         </>
+        
         
     )
 }

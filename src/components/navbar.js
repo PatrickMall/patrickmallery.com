@@ -12,7 +12,7 @@ const NavBar = ({ logo }) => {
     return (
         <div className="navbar">   
             <div className="flex justify-between item-center">
-                <Link to="/"><img src={logo} alt="logo" className="w-12 ml-8 mt-8 fixed z-20" /></Link>
+                <Link to="/"><img src={logo} alt="logo" className="w-12 ml-8 mt-8 fixed" /></Link>
                 <div className="lg:flex fixed right-0 z-10 hidden">
                     <NavItem url={'/about'} label={'about'} />
                     <NavItem url={'/portfolio'} label={'portfolio'} />

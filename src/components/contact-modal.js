@@ -28,9 +28,9 @@ const ContactModal = () => {
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             
-            <div className="flex lg:mx-32 md:my-32 mt-60 lg:bg-transparent bg-black-transparent md:mx-44 md:p-2">
+            <div className="flex lg:mx-32 lg:mt-60 mt-24 lg:bg-transparent bg-black-transparent md:mx-44 md:p-2">
                 <div>
-                <h1 className="prompt text-white uppercase font-bold mr-4 lg:mb-16 md:text-6xl text-4xl md:text-left text-center md:mt-4 mt-4">Contact me</h1>
+                <h1 className="prompt text-white uppercase font-bold mr-4 lg:mb-16 md:text-6xl text-4xl md:text-left text-center">Contact me</h1>
                     <form ref={form} onSubmit={sendEmail}>
                         <FormInput label={'Name'} type={'text'} id={'name'} name={'from_name'} />
                     <FormInput label={'Email'} type={'email'} id={'email'} name={'from_email'}/>

@@ -19,10 +19,10 @@ const ChuckNorris = () => {
                         
                     </div> 
                 </div>
-                <div className="col-span-3 row-span-2 mx-auto lg:w-11/12 lg:-mt-28 mt-2">
+                <div className="col-span-3 row-span-2 mx-auto lg:w-11/12 mt-2">
                     <img className="mx-auto" src={JokeHome} />
                 </div>
-                <div className="col-span-3 row-span-2 mx-auto w-11/12 lg:-mt-28 lg:block hidden">
+                <div className="col-span-3 row-span-2 mx-auto w-11/12 lg:block hidden">
                     <img className="mx-auto" src={JokFavorites} />
                 </div>
 
