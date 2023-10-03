@@ -4,22 +4,22 @@ import SorceryPortal from './sorcery-portal'
 import Daterbase from './Daterbase'
 import ChuckNorris from './chuck-norris'
 import TicTacToe from './tictactoe'
+import StreetGoat from './streetgoat'
+import SorceryDesign from './sorcery-design'
+
 
 const Portfolio = () => {
-    
+
+
     return (    
         <motion.div initial={{opacity: 0}} animate={{opacity: 1} } exit={{opacity: 0}}>
-            <div className='w-screen h-screen bg-black pt-32 hidden lg:block'>
-            <HorizontalScroller />
-            </div>
-            <div className='w-screen h-full bg-black pt-32 lg:hidden'>
+            <div className='w-screen h-full bg-black pt-32'>
                 <SorceryPortal />
-                <hr className='text-white md:pb-32 pb-32'></hr>
                 <Daterbase /> 
-                <hr className='text-white md:pb-32 pb-32'></hr>
                 <ChuckNorris />
-                <hr className='text-white md:pb-32 pb-32'></hr>
-                <TicTacToe />  
+                <TicTacToe />
+                <StreetGoat />
+                <SorceryDesign />
             </div>
         </motion.div>
     )

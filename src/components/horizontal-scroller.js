@@ -5,6 +5,7 @@ import { useState } from "react"
 import Daterbase from "./Daterbase"
 import ChuckNorris from "./chuck-norris"
 import TicTacToe from "./tictactoe"
+import StreetGoat from "./streetgoat"
 
 const HorizontalScroller = () => {
     const [emoji, setEmoji] = useState(false)
@@ -27,7 +28,10 @@ const HorizontalScroller = () => {
                 </div>
                 <div className="">
                 <TicTacToe />         
-            </div>
+                </div>
+                <div className="">
+                <StreetGoat />         
+                </div>
             
         </HorizontalScroll>
         </>
